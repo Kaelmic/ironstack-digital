@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>J. Cresco | Simple Booking Systems for Local Businesses</title>
+  <meta 
+    name="description" 
+    content="Simple booking websites for barbershops, salons, tattoo studios, and local service businesses in Malta."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">J. Cresco Booking Websites</a>
+      <a href="#contact" class="nav-btn">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Booking websites for Malta businesses</p>
+        <h1>Simple booking websites for local businesses in Malta.</h1>
+        <p>
+          I create clean, mobile-friendly booking websites for barbershops,
+          salons, tattoo studios, and local service businesses.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#demos" class="btn">View Demos</a>
+          <a href="#pricing" class="btn secondary">See Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro reveal">
+      <h2>Make booking easier for your customers</h2>
+      <p>
+        Customers can choose a service, date, and preferred time from their phone.
+        You receive the request by email and confirm the booking by phone or WhatsApp.
+      </p>
+    </section>
+
+    <section id="demos" class="demos reveal">
+      <h2>Live Demo Websites</h2>
+
+      <div class="demo-grid">
+        <article class="demo-card">
+          <span class="tag">Barbershop</span>
+          <h3>Barbershop Booking Demo</h3>
+          <p>
+            Designed for haircuts, fades, beard trims, and grooming appointments.
+          </p>
+          <a href="https://kaelmic.github.io/Booking-System-v2/" target="_blank" class="card-btn">View Demo</a>
+        </article>
+
+        <article class="demo-card">
+          <span class="tag">Salon</span>
+          <h3>Salon Booking Demo</h3>
+          <p>
+            Perfect for hair styling, color, treatments, nails, and beauty appointments.
+          </p>
+          <a href="https://kaelmic.github.io/Booking-System-v1/" target="_blank" class="card-btn">View Demo</a>
+        </article>
+
+        <article class="demo-card">
+          <span class="tag">Tattoo Studio</span>
+          <h3>Tattoo Studio Booking Demo</h3>
+          <p>
+            Built for consultations, custom tattoo requests, touch-ups, and sessions.
+          </p>
+          <a href="https://kaelmic.github.io/tattooshop/" target="_blank" class="card-btn">View Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="included reveal">
+      <h2>What’s Included</h2>
+
+      <div class="included-grid">
+        <div class="included-card">
+          <h3>Mobile-Friendly Website</h3>
+          <p>Looks clean and works properly on phones, tablets, and desktops.</p>
+        </div>
+
+        <div class="included-card">
+          <h3>Booking Request Form</h3>
+          <p>Customers can select service, date, time, and send their request.</p>
+        </div>
+
+        <div class="included-card">
+          <h3>Email Notification</h3>
+          <p>You receive booking requests directly by email.</p>
+        </div>
+
+        <div class="included-card">
+          <h3>WhatsApp Button</h3>
+          <p>Customers can contact you quickly through WhatsApp.</p>
+        </div>
+
+        <div class="included-card">
+          <h3>Custom Branding</h3>
+          <p>Business name, colors, services, pricing, and text customized for you.</p>
+        </div>
+
+        <div class="included-card">
+          <h3>Basic Setup Support</h3>
+          <p>Help with setup, testing, and launching your booking page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing reveal">
+      <h2>Simple Pricing</h2>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price">€99–€149</p>
+          <p>Basic booking website using a preview/free hosting link.</p>
+          <ul>
+            <li>One-page booking website</li>
+            <li>Booking request form</li>
+            <li>Email notifications</li>
+            <li>WhatsApp button</li>
+          </ul>
+        </div>
+
+        <div class="price-card featured">
+          <div class="badge">Recommended</div>
+          <h3>Professional</h3>
+          <p class="price">€149–€199</p>
+          <p>Booking website connected to your own business domain.</p>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>Custom domain setup</li>
+            <li>More professional business link</li>
+            <li>Launch support</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <h3>Maintenance</h3>
+          <p class="price">€20/month</p>
+          <p>Optional monthly support for small changes and updates.</p>
+          <ul>
+            <li>Service updates</li>
+            <li>Opening hour changes</li>
+            <li>Text updates</li>
+            <li>Basic support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <h2>Want one like this for your business?</h2>
+      <p>
+        Send me a message and I’ll show you how your booking page could look.
+      </p>
+
+      <a href="https://wa.me/35679419933" target="_blank" rel="noopener noreferrer" class="btn">
+        Message Me on WhatsApp
+      </a>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 J. Cresco Booking Websites. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      revealElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight - 100) {
+          element.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+</body>
+</html>
