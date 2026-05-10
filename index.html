@@ -17,7 +17,9 @@
   <header class="navbar">
     <div class="nav-container">
       <a href="#" class="logo">Ironstack Digital</a>
-      <a href="#contact" class="nav-btn">Get Started</a>
+      <a href="javascript:void(0)" 
+   class="btn"
+   onclick="scrollToSection('#contact')">Get Started</a>
     </div>
   </header>
 
@@ -32,8 +34,12 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#demos" class="btn">View Demos</a>
-          <a href="#pricing" class="btn secondary">See Pricing</a>
+          <a href="javascript:void(0)" 
+   class="btn"
+   onclick="scrollToSection('#demos')">View Demos</a>
+          <a href="javascript:void(0)" 
+   class="btn secondary"
+   onclick="scrollToSection('#pricing')">See Pricing</a>
         </div>
       </div>
     </section>
@@ -215,22 +221,7 @@
     <p>© 2026 Ironstack Digital. All rights reserved.</p>
   </footer>
 
-  <script>
-    const revealElements = document.querySelectorAll(".reveal");
+  <script src="script.js"></script>
 
-    function revealOnScroll() {
-      revealElements.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (elementTop < windowHeight - 100) {
-          element.classList.add("active");
-        }
-      });
-    }
-
-    window.addEventListener("scroll", revealOnScroll);
-    window.addEventListener("load", revealOnScroll);
-  </script>
 </body>
 </html>
