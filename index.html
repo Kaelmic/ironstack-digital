@@ -13,40 +13,59 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/isd.png">
   <link rel="apple-touch-icon" href="images/isd.png">
-  <meta name="theme-color" content="#08090b">
+  <meta name="theme-color" content="#030711">
   
 </head>
 
 <body>
   <header class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">Ironstack Digital</a>
-      <a href="javascript:void(0)" 
-   class="btn"
-   onclick="scrollToSection('#contact')">Get Started</a>
-    </div>
-  </header>
+  <div class="nav-container">
+    <a href="#" class="logo">
+      <span>Ironstack</span> Digital
+    </a>
+
+    <nav class="nav-links">
+      <a href="javascript:void(0)" onclick="scrollToSection('#demos')">Projects</a>
+      <a href="javascript:void(0)" onclick="scrollToSection('#pricing')">Pricing</a>
+      <a href="javascript:void(0)" onclick="scrollToSection('#contact')">Contact</a>
+    </nav>
+
+    <a href="javascript:void(0)" 
+       class="nav-btn"
+       onclick="scrollToSection('#contact')">
+      Get Started
+    </a>
+  </div>
+</header>
 
   <main>
     <section class="hero">
-      <div class="hero-content reveal hero-reveal">
-        <p class="eyebrow">Digital solutions for local businesses</p>
-        <h1>Modern websites and systems built for growing businesses.</h1>
-        <p>
-          Ironstack Digital creates clean, mobile-friendly websites, booking systems,
-    and business tools for barbershops, salons, tattoo studios, and local businesses in Malta.
-        </p>
+  <div class="hero-content reveal hero-reveal">
+    <p class="eyebrow">Digital solutions for modern businesses</p>
 
-        <div class="hero-buttons">
-          <a href="javascript:void(0)" 
-   class="btn"
-   onclick="scrollToSection('#demos')">View Demos</a>
-          <a href="javascript:void(0)" 
-   class="btn secondary"
-   onclick="scrollToSection('#pricing')">See Pricing</a>
-        </div>
-      </div>
-    </section>
+    <h1>Websites, systems, and app concepts built for the future.</h1>
+
+    <p>
+      Ironstack Digital builds clean, modern digital experiences for local businesses,
+      startups, and ideas. From websites and booking systems to dashboards,
+      business tools, and app prototypes.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="javascript:void(0)" 
+         class="btn"
+         onclick="scrollToSection('#demos')">
+        View Projects
+      </a>
+
+      <a href="javascript:void(0)" 
+         class="btn secondary"
+         onclick="scrollToSection('#contact')">
+        Start a Project
+      </a>
+    </div>
+  </div>
+</section>
 
     <section class="intro reveal">
       <h2>Make booking easier for your customers</h2>
